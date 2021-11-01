@@ -297,7 +297,7 @@ def tic_tac_toe():
         else:
            # message = winner.upper() + " won!"
             if winner.upper() == 'X':
-                message = player1_name +"'won"
+                message = player1_name +"won"
                 list_1.append(player1_name)
                 SAVE_DATA = shelve.open("Save Data")
                 name1 = SAVE_DATA['user_name1']
@@ -309,7 +309,7 @@ def tic_tac_toe():
                 SAVE_DATA.close()
                 
             else:
-                 message = player2_name +"'won"
+                 message = player2_name +"won"
                  list_1.append(player2_name)
                  SAVE_DATA = shelve.open("Save Data")
                  name1 = SAVE_DATA['user_name1']
